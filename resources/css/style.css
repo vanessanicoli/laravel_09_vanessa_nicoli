@@ -1,3 +1,164 @@
-h1 {
-    color: red;
+/* COLORS */
+
+:root {
+    --dbl: rgb(42, 55, 129);
+    --bl: rgb(97, 163, 196);
+    --lbl: rgb(199, 220, 252);
+}
+
+.bg-dbl {
+    background-color: var(--dbl);
+}
+
+.text-dbl {
+    color: var(--dbl);
+}
+
+.bg-bl {
+    background-color: var(--bl);
+}
+
+.text-bl {
+    color: var(--bl);
+}
+
+.bg-lbl {
+    background-color: var(--lbl);
+}
+
+.text-lbl {
+    color: var(--lbl);
+}
+
+.text-d-bord {
+    text-shadow: 4px 4px 4px var(--dbl);
+}
+
+.text-l-bord {
+    text-shadow: 3px 3px 3px var(--lbl);
+}
+
+body {
+    background-color: var(--bl);
+    color: var(--lbl);
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVABAR */
+.logo {
+    width: 35px;
+}
+
+.navbar-toggler {
+    border: 3px solid var(--bl);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link {
+    color: var(--lbl);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: var(--bl);
+    transform: scale(1.1);
+}
+
+/* HEADER */
+.header-custom {
+    background-color: rgba(42, 55, 129, 0.2);
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* HOME */
+.btn-home {
+    width: 500px;
+    height: 80px;
+    background-color: var(--dbl);
+    outline: 5px solid var(--lbl);
+    color: var(--lbl);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.btn-home:hover {
+    transform: scale(1.1);
+    outline: 5px solid var(--dbl);
+    color: var(--dbl);
+}
+
+/* FORM */
+
+.box-bg {
+    width: 700px;
+    padding: 30px;
+    background-color: var(--dbl);
+    border-radius: 25px;
+}
+
+.form-control {
+    background-color: var(--lbl);
+    color: var(--dbl);
+}
+
+.form-control:focus {
+    background-color: var(--lbl);
+    color: var(--dbl);
+    box-shadow: none;
+}
+
+.form-label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn-form {
+    background-color: var(--bl);
+    outline: 3px solid var(--lbl);
+    color: var(--lbl);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-form:hover {
+
+    transform: scale(1.1);
+}
+
+
+/* CARDS */
+
+.card {
+    background-color: var(--lbl);
+    border: 3px solid var(--dbl);
+    color: var(--dbl);
+}
+
+.descr-custom {
+    border: 2px solid var(--bl);
+    padding: 5px;
+    font-weight: 500;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 900px) {
+    .btn-home {
+        width: 300px;
+        height: 120px;
+    }
 }
