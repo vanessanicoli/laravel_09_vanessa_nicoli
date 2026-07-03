@@ -20,7 +20,7 @@
         </a>
     </div>
     @else
-    <div class="row">
+    <div class="row justify-content-center">
         @foreach ($products as $product)            
         <div class="col-12 col-md-4 d-flex justify-content-center align-content-center mb-4">
             <div class="card" style="width: 18rem;">

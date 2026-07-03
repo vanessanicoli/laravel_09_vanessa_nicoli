@@ -16,7 +16,7 @@
                     <a href="{{ route('addProduct') }}">
                         <button class="btn btn-home mb-5" type="button">Aggiungi prodotti</button>
                     </a>
-                    <a href="">
+                    <a href="{{ route('showProducts') }}">
                         <button class="btn btn-home" type="button">Visualizza prodotti</button>
                     </a>
                 </div>
